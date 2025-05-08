@@ -1,0 +1,20 @@
+{
+  "add": {
+    "minecraft:food": {
+      "nutrition": 0,
+      "saturation": 0,
+      "effects": [
+        {
+          "effect": {
+            "id": "foodoverhaulvanillafoods:mutton_food_effect",
+            "amplifier": 0,
+            "duration": 12000,
+            "ambient": false,
+            "show_particles": false,
+            "show_icon": true
+          }
+        }
+      ]
+    }
+  }
+}
