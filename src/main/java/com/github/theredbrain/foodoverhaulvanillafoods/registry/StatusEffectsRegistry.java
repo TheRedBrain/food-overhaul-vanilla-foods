@@ -67,11 +67,11 @@ public class StatusEffectsRegistry {
 		APPLE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			APPLE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			APPLE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			APPLE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -82,11 +82,11 @@ public class StatusEffectsRegistry {
 		BAKED_POTATO_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			BAKED_POTATO_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			BAKED_POTATO_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			BAKED_POTATO_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 7.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -97,11 +97,11 @@ public class StatusEffectsRegistry {
 		BEEF_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			BEEF_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			BEEF_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			BEEF_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -112,11 +112,11 @@ public class StatusEffectsRegistry {
 		BEETROOT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beetroot_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			BEETROOT_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.beetroot_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			BEETROOT_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.beetroot_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			BEETROOT_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.beetroot_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -127,11 +127,11 @@ public class StatusEffectsRegistry {
 		BEETROOT_SOUP_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			BEETROOT_SOUP_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			BEETROOT_SOUP_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			BEETROOT_SOUP_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -147,11 +147,11 @@ public class StatusEffectsRegistry {
 		BREAD_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.bread_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			BREAD_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.bread_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			BREAD_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.bread_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			BREAD_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.bread_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -162,11 +162,11 @@ public class StatusEffectsRegistry {
 		BROWN_MUSHROOM_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			BROWN_MUSHROOM_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			BROWN_MUSHROOM_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			BROWN_MUSHROOM_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -177,11 +177,11 @@ public class StatusEffectsRegistry {
 		CAKE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			CAKE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			CAKE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			CAKE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 25.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -192,11 +192,11 @@ public class StatusEffectsRegistry {
 		CARROT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.carrot_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			CARROT_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.carrot_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			CARROT_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.carrot_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			CARROT_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.carrot_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -207,11 +207,11 @@ public class StatusEffectsRegistry {
 		CHICKEN_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			CHICKEN_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			CHICKEN_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			CHICKEN_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -226,11 +226,11 @@ public class StatusEffectsRegistry {
 		CHORUS_FRUIT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			CHORUS_FRUIT_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			CHORUS_FRUIT_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			CHORUS_FRUIT_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -241,11 +241,11 @@ public class StatusEffectsRegistry {
 		COCOA_BEANS_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COCOA_BEANS_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COCOA_BEANS_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COCOA_BEANS_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -256,11 +256,11 @@ public class StatusEffectsRegistry {
 		COD_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COD_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COD_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COD_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -276,11 +276,11 @@ public class StatusEffectsRegistry {
 		COOKED_BEEF_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_BEEF_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_BEEF_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_BEEF_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -291,11 +291,11 @@ public class StatusEffectsRegistry {
 		COOKED_CHICKEN_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_CHICKEN_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_CHICKEN_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_CHICKEN_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -306,11 +306,11 @@ public class StatusEffectsRegistry {
 		COOKED_COD_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_COD_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_COD_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_COD_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -321,11 +321,11 @@ public class StatusEffectsRegistry {
 		COOKED_MUTTON_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_MUTTON_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_MUTTON_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_MUTTON_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -336,11 +336,11 @@ public class StatusEffectsRegistry {
 		COOKED_PORKCHOP_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_PORKCHOP_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_PORKCHOP_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_PORKCHOP_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -351,11 +351,11 @@ public class StatusEffectsRegistry {
 		COOKED_RABBIT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_RABBIT_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_RABBIT_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_RABBIT_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -366,11 +366,11 @@ public class StatusEffectsRegistry {
 		COOKED_SALMON_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKED_SALMON_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKED_SALMON_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKED_SALMON_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -381,11 +381,11 @@ public class StatusEffectsRegistry {
 		COOKIE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			COOKIE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			COOKIE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			COOKIE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -396,11 +396,11 @@ public class StatusEffectsRegistry {
 		DRIED_KELP_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.dried_kelp_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			DRIED_KELP_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.dried_kelp_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			DRIED_KELP_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.dried_kelp_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			DRIED_KELP_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION_DELAY_THRESHOLD, FoodOverhaulVanillaFoods.identifier("effect.dried_kelp_food_effect"), -30.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -411,11 +411,11 @@ public class StatusEffectsRegistry {
 		ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 30.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -449,11 +449,11 @@ public class StatusEffectsRegistry {
 		GOLDEN_APPLE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			GOLDEN_APPLE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			GOLDEN_APPLE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			GOLDEN_APPLE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 50.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -464,11 +464,11 @@ public class StatusEffectsRegistry {
 		GOLDEN_CARROT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			GOLDEN_CARROT_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			GOLDEN_CARROT_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			GOLDEN_CARROT_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 50.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -486,11 +486,11 @@ public class StatusEffectsRegistry {
 		MELON_SLICE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			MELON_SLICE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			MELON_SLICE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			MELON_SLICE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -501,11 +501,11 @@ public class StatusEffectsRegistry {
 		MUSHROOM_STEW_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			MUSHROOM_STEW_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			MUSHROOM_STEW_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			MUSHROOM_STEW_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -516,11 +516,11 @@ public class StatusEffectsRegistry {
 		MUTTON_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			MUTTON_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			MUTTON_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			MUTTON_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -537,11 +537,11 @@ public class StatusEffectsRegistry {
 		PORKCHOP_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			PORKCHOP_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			PORKCHOP_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isOverhauledDamageLoaded) {
 			PORKCHOP_FOOD_EFFECT
 					.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -551,11 +551,11 @@ public class StatusEffectsRegistry {
 		POTATO_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			POTATO_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			POTATO_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			POTATO_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -572,11 +572,11 @@ public class StatusEffectsRegistry {
 		PUMPKIN_PIE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			PUMPKIN_PIE_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			PUMPKIN_PIE_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			PUMPKIN_PIE_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -587,11 +587,11 @@ public class StatusEffectsRegistry {
 		RABBIT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			RABBIT_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.rabbit_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			RABBIT_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.rabbit_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			RABBIT_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.rabbit_food_effect"), 20.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -602,11 +602,11 @@ public class StatusEffectsRegistry {
 		RABBIT_STEW_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			RABBIT_STEW_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			RABBIT_STEW_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			RABBIT_STEW_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 7.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -628,11 +628,11 @@ public class StatusEffectsRegistry {
 		SALMON_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			SALMON_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			SALMON_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isOverhauledDamageLoaded) {
 			SALMON_FOOD_EFFECT
 					.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -648,11 +648,11 @@ public class StatusEffectsRegistry {
 		SUGAR_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sugar_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			SUGAR_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sugar_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			SUGAR_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sugar_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			SUGAR_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.sugar_food_effect"), 25.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -663,11 +663,11 @@ public class StatusEffectsRegistry {
 		SUSPICIOUS_STEW_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			SUSPICIOUS_STEW_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			SUSPICIOUS_STEW_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			SUSPICIOUS_STEW_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -682,11 +682,11 @@ public class StatusEffectsRegistry {
 		SWEET_BERRIES_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			SWEET_BERRIES_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			SWEET_BERRIES_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isStaminaAttributesLoaded) {
 			SWEET_BERRIES_FOOD_EFFECT
 					.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -697,11 +697,11 @@ public class StatusEffectsRegistry {
 		TROPICAL_FISH_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
-			TROPICAL_FISH_FOOD_EFFECT
-					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
-			;
-		}
+//		if (FoodOverhaulVanillaFoods.isHealthRegenerationOverhaulLoaded) {
+//			TROPICAL_FISH_FOOD_EFFECT
+//					.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
+//			;
+//		}
 		if (FoodOverhaulVanillaFoods.isOverhauledDamageLoaded) {
 			TROPICAL_FISH_FOOD_EFFECT
 					.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
