@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'fabric-loom' version '1.10-SNAPSHOT'
 	id "com.matthewprenger.cursegradle" version "1.4.0"
 	id "com.github.breadmoirai.github-release" version "2.4.1"
 	id "com.modrinth.minotaur" version "2.+"
@@ -132,7 +132,7 @@ if (project.hasProperty('release_type')) {
 				optionalDependency 'mana-attributes'
 				optionalDependency 'overhauled-damage'
 				optionalDependency 'stamina-attributes'
-				optionalDependency 'item-components'
+				optionalDependency 'default-components'
 			}
 
 			mainArtifact(remapJar)
@@ -167,7 +167,7 @@ if (project.hasProperty('release_type')) {
 			optional.project 'mana-attributes'
 			optional.project 'overhauled-damage'
 			optional.project 'stamina-attributes'
-			optional.project 'item-components'
+			optional.project 'default-components'
 		}
 	}
 
