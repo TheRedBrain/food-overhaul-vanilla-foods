@@ -1,6 +1,12 @@
 package com.github.theredbrain.foodoverhaulvanillafoods;
 
+import com.github.theredbrain.foodoverhaulvanillafoods.compat.HealthRegenerationOverhaulCompat;
+import com.github.theredbrain.foodoverhaulvanillafoods.compat.ManaAttributesCompat;
+import com.github.theredbrain.foodoverhaulvanillafoods.compat.OverhauledDamageCompat;
+import com.github.theredbrain.foodoverhaulvanillafoods.compat.StaminaAttributesCompat;
+import com.github.theredbrain.foodoverhaulvanillafoods.config.ServerConfig;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
+import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -19,13 +25,28 @@ import static net.fabricmc.fabric.api.resource.ResourceManagerHelper.registerBui
 public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static final String MOD_ID = "foodoverhaulvanillafoods";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static ServerConfig SERVER_CONFIG;
 
-	public static final boolean isManaAttributesLoaded = FabricLoader.getInstance().isModLoaded("manaattributes");
-	public static final boolean isStaminaAttributesLoaded = FabricLoader.getInstance().isModLoaded("staminaattributes");
 	public static final boolean isHealthRegenerationOverhaulLoaded = FabricLoader.getInstance().isModLoaded("healthregenerationoverhaul");
+	public static final boolean isManaAttributesLoaded = FabricLoader.getInstance().isModLoaded("manaattributes");
 	public static final boolean isOverhauledDamageLoaded = FabricLoader.getInstance().isModLoaded("overhauleddamage");
+	public static final boolean isStaminaAttributesLoaded = FabricLoader.getInstance().isModLoaded("staminaattributes");
 
-	// region food effects
+	public static void addModdedAttributesToFoodEffects() {
+		if (isHealthRegenerationOverhaulLoaded && SERVER_CONFIG.enable_health_regeneration_overhaul_compatibility.get()) {
+			HealthRegenerationOverhaulCompat.addAttributes();
+		}
+		if (isManaAttributesLoaded && SERVER_CONFIG.enable_mana_attributes_compatibility.get()) {
+			ManaAttributesCompat.addAttributes();
+		}
+		if (isOverhauledDamageLoaded && SERVER_CONFIG.enable_overhauled_damage_compatibility.get()) {
+			OverhauledDamageCompat.addAttributes();
+		}
+		if (isStaminaAttributesLoaded && SERVER_CONFIG.enable_stamina_attributes_compatibility.get()) {
+			StaminaAttributesCompat.addAttributes();
+		}
+	}
+
 	public static RegistryEntry<StatusEffect> APPLE_FOOD_EFFECT;
 	public static RegistryEntry<StatusEffect> BAKED_POTATO_FOOD_EFFECT;
 	public static RegistryEntry<StatusEffect> BEEF_FOOD_EFFECT;
@@ -72,11 +93,11 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static RegistryEntry<StatusEffect> SUSPICIOUS_STEW_FOOD_EFFECT;
 	public static RegistryEntry<StatusEffect> SWEET_BERRIES_FOOD_EFFECT;
 	public static RegistryEntry<StatusEffect> TROPICAL_FISH_FOOD_EFFECT;
-	// endregion food effects
 
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Even more overhauled food!");
+		SERVER_CONFIG = ConfigApiJava.registerAndLoadConfig(ServerConfig::new);
 
 		StatusEffectsRegistry.registerEffects();
 	}
