@@ -5,6 +5,7 @@ import com.github.theredbrain.foodoverhaulvanillafoods.compat.ManaAttributesComp
 import com.github.theredbrain.foodoverhaulvanillafoods.compat.OverhauledDamageCompat;
 import com.github.theredbrain.foodoverhaulvanillafoods.compat.StaminaAttributesCompat;
 import com.github.theredbrain.foodoverhaulvanillafoods.config.ServerConfig;
+import com.github.theredbrain.foodoverhaulvanillafoods.registry.BlockRegistry;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
 import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import net.fabricmc.api.ModInitializer;
@@ -99,6 +100,7 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 		LOGGER.info("Even more overhauled food!");
 		SERVER_CONFIG = ConfigApiJava.registerAndLoadConfig(ServerConfig::new);
 
+		BlockRegistry.init();
 		StatusEffectsRegistry.registerEffects();
 	}
 
