@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.10-SNAPSHOT'
+	id 'fabric-loom' version '1.11-SNAPSHOT'
 	id "com.matthewprenger.cursegradle" version "1.4.0"
 	id "com.github.breadmoirai.github-release" version "2.4.1"
 	id "com.modrinth.minotaur" version "2.+"
@@ -49,7 +49,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	// Fzzy Config
 	modImplementation"me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}"
@@ -59,15 +59,18 @@ dependencies {
 
 	// Stamina Attributes
 	modImplementation "maven.modrinth:stamina-attributes:${project.stamina_attributes_version}"
+//	modImplementation(files("libs/stamina-attributes-${project.stamina_attributes_version}.jar"))
 
 	// Overhauled Damage
 	modImplementation "maven.modrinth:overhauled-damage:${project.overhauled_damage_version}"
+//	modImplementation(files("libs/overhauled-damage-${project.overhauled_damage_version}.jar"))
 
 	// Health Regeneration Overhaul
 	modImplementation "maven.modrinth:health-regeneration-overhaul:${project.health_regeneration_overhaul_version}"
 
 	// Food Overhaul
 	modImplementation "maven.modrinth:food-overhaul:${project.food_overhaul_version}"
+//	modImplementation(files("libs/food-overhaul-${project.food_overhaul_version}.jar"))
 
 	// Resource Bar API
 	modImplementation "maven.modrinth:resource-bar-api:${project.resource_bar_api_version}"
