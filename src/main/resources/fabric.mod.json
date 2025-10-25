@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "foodoverhaulvanillafoods",
 	"version": "${version}",
-	"name": "Food Overhaul - Effects",
+	"name": "Food Overhaul - Vanilla Foods",
 	"description": "Adds 'Food Overhaul' support for vanilla items.",
 	"authors": [
 		"TheRedBrain"

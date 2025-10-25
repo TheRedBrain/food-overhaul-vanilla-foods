@@ -57,11 +57,13 @@ public class OverhauledCakeBlock extends GenericFoodBlock {
 		player.incrementStat(Stats.EAT_CAKE_SLICE);
 		int i = state.get(BITES);
 		world.emitGameEvent(player, GameEvent.EAT, pos);
-		if (i < 6) {
-			world.setBlockState(pos, state.with(BITES, i + 1), Block.NOTIFY_ALL);
-		} else {
-			world.removeBlock(pos, false);
-			world.emitGameEvent(player, GameEvent.BLOCK_DESTROY, pos);
+		if (!foodBlockEntity.getInfiniteUses()) {
+			if (i < 6) {
+				world.setBlockState(pos, state.with(BITES, i + 1), Block.NOTIFY_ALL);
+			} else {
+				world.removeBlock(pos, false);
+				world.emitGameEvent(player, GameEvent.BLOCK_DESTROY, pos);
+			}
 		}
 	}
 
