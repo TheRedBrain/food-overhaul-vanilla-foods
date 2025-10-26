@@ -102,12 +102,11 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 
 		BlockRegistry.init();
 		StatusEffectsRegistry.registerEffects();
-	}
 
-	static {
 		Optional<ModContainer> optionalModContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
 		if (optionalModContainer.isPresent()) {
-			registerBuiltinResourcePack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Text.translatable("foodoverhauleffects.builtin_resource_packs.food_overhaul_vanilla_items"), ResourcePackActivationType.DEFAULT_ENABLED);
+			registerBuiltinResourcePack(identifier("cake_recipe_replacement"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement"), ResourcePackActivationType.DEFAULT_ENABLED);
+			registerBuiltinResourcePack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items"), ResourcePackActivationType.DEFAULT_ENABLED);
 		}
 	}
 

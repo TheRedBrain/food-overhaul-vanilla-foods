@@ -1,0 +1,29 @@
+{
+  "add": {
+    "minecraft:consumable": {
+      "effects": [
+        {
+          "on_consume_effects": [
+            {
+              "type": "minecraft:apply_effects",
+              "effect": {
+                "id": "foodoverhaulvanillafoods:suspicious_stew_food_effect",
+                "amplifier": 0,
+                "duration": 30000,
+                "ambient": false,
+                "show_particles": false,
+                "show_icon": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "minecraft:use_cooldown": {
+      "seconds": 0.25
+    }
+  },
+  "remove": [
+    "minecraft:food"
+  ]
+}

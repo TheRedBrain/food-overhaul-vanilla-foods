@@ -1,46 +1,40 @@
 package com.github.theredbrain.foodoverhaulvanillafoods.compat;
 
-import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
-import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
-import com.github.theredbrain.overhauleddamage.OverhauledDamage;
-import com.github.theredbrain.staminaattributes.StaminaAttributes;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-
 public class OverhauledDamageCompat {
 	public static void addAttributes() {
-		StatusEffectsRegistry.BEETROOT_SOUP_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.FROST_RESISTANCE, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.CHICKEN_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COD_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.HONEY_BOTTLE_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.MAX_POISON_BUILD_UP, FoodOverhaulVanillaFoods.identifier("effect.honey_bottle_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.honey_bottle_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.POISONOUS_POTATO_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.poisonous_potato_food_effect"), -3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.PORKCHOP_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.PUFFERFISH_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.pufferfish_food_effect"), -5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.RED_MUSHROOM_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.red_mushroom_food_effect"), -4.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.SALMON_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.SPIDER_EYE_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.spider_eye_food_effect"), -3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.TROPICAL_FISH_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		StatusEffectsRegistry.BEETROOT_SOUP_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.FROST_RESISTANCE, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.CHICKEN_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COD_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.HONEY_BOTTLE_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.MAX_POISON_BUILD_UP, FoodOverhaulVanillaFoods.identifier("effect.honey_bottle_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.honey_bottle_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.POISONOUS_POTATO_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.poisonous_potato_food_effect"), -3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.PORKCHOP_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.PUFFERFISH_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.pufferfish_food_effect"), -5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.RED_MUSHROOM_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.red_mushroom_food_effect"), -4.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.SALMON_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.SPIDER_EYE_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.spider_eye_food_effect"), -3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.TROPICAL_FISH_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), -2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 	}
 }

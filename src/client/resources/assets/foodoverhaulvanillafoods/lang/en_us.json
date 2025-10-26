@@ -46,5 +46,8 @@
 	"effect.foodoverhaulvanillafoods.sugar_food_effect": "Sugar",
 	"effect.foodoverhaulvanillafoods.suspicious_stew_food_effect": "Suspicious Stew",
 	"effect.foodoverhaulvanillafoods.sweet_berries_food_effect": "Sweet Berries",
-	"effect.foodoverhaulvanillafoods.tropical_fish_food_effect": "Tropical Fish"
+	"effect.foodoverhaulvanillafoods.tropical_fish_food_effect": "Tropical Fish",
+
+	"foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement": "Cake Recipe Replacement",
+	"foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items": "Food Overhaul - Vanilla Items"
 }

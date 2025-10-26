@@ -1,3 +1,7 @@
+# 2.0.0
+
+- updated to Minecraft 1.21.10 and Food Overhaul 3.0.0
+
 # 1.1.0
 
 - now works with Food Overhaul 2.3.0
