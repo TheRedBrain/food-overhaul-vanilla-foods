@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": {
+      "text": "Changes cake recipe to result in 'foodoverhaulvanillafoods:overhauled_cake'."
+    },
+    "min_format": [88, 0],
+    "max_format": [88, 0]
+  }
+}

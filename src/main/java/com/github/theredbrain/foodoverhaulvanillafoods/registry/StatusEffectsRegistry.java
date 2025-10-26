@@ -1,6 +1,7 @@
 package com.github.theredbrain.foodoverhaulvanillafoods.registry;
 
 import com.github.theredbrain.foodoverhaul.FoodOverhaul;
+import com.github.theredbrain.foodoverhaul.entity.effect.RemoveFoodStatusEffect;
 import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
 import com.github.theredbrain.foodoverhaulvanillafoods.entity.effect.FoodStatusEffect;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -50,7 +51,7 @@ public class StatusEffectsRegistry {
 	public static final StatusEffect RABBIT_FOOD_EFFECT = new FoodStatusEffect();
 	public static final StatusEffect RABBIT_STEW_FOOD_EFFECT = new FoodStatusEffect();
 	public static final StatusEffect RED_MUSHROOM_FOOD_EFFECT = new FoodStatusEffect();
-	public static final StatusEffect ROTTEN_FLESH_FOOD_EFFECT = new FoodStatusEffect();
+	public static final StatusEffect ROTTEN_FLESH_FOOD_EFFECT = new RemoveFoodStatusEffect();
 	public static final StatusEffect SALMON_FOOD_EFFECT = new FoodStatusEffect();
 	public static final StatusEffect SPIDER_EYE_FOOD_EFFECT = new FoodStatusEffect();
 	public static final StatusEffect SUGAR_FOOD_EFFECT = new FoodStatusEffect();

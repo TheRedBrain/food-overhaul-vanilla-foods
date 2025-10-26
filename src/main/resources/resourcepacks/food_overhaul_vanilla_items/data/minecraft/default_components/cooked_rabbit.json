@@ -1,0 +1,27 @@
+{
+  "add": {
+    "minecraft:consumable": {
+      "on_consume_effects": [
+        {
+          "type": "minecraft:apply_effects",
+          "effects": [
+            {
+              "id": "foodoverhaulvanillafoods:cooked_rabbit_food_effect",
+              "amplifier": 0,
+              "duration": 24000,
+              "ambient": false,
+              "show_particles": false,
+              "show_icon": true
+            }
+          ]
+        }
+      ]
+    },
+    "minecraft:use_cooldown": {
+      "seconds": 0.5
+    }
+  },
+  "remove": [
+    "minecraft:food"
+  ]
+}

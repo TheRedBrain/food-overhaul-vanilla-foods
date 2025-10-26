@@ -9,6 +9,7 @@ import com.github.theredbrain.foodoverhaulvanillafoods.registry.BlockRegistry;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
 import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
@@ -105,8 +106,8 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 
 		Optional<ModContainer> optionalModContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
 		if (optionalModContainer.isPresent()) {
-			registerBuiltinResourcePack(identifier("cake_recipe_replacement"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement"), ResourcePackActivationType.DEFAULT_ENABLED);
-			registerBuiltinResourcePack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items"), ResourcePackActivationType.DEFAULT_ENABLED);
+			ResourceManagerHelper.registerBuiltinResourcePack(identifier("cake_recipe_replacement"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement"), ResourcePackActivationType.DEFAULT_ENABLED);
+			ResourceManagerHelper.registerBuiltinResourcePack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items"), ResourcePackActivationType.DEFAULT_ENABLED);
 		}
 	}
 
