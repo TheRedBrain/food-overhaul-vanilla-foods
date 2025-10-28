@@ -22,8 +22,6 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Optional;
 
-import static net.fabricmc.fabric.api.resource.ResourceManagerHelper.registerBuiltinResourcePack;
-
 public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static final String MOD_ID = "foodoverhaulvanillafoods";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);

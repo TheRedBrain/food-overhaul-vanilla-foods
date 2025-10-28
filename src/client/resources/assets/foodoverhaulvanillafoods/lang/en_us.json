@@ -1,5 +1,6 @@
 {
 	"block.foodoverhaulvanillafoods.overhauled_cake": "Cake",
+	"item.foodoverhaulvanillafoods.overhauled_cake": "Cake",
 
 	"effect.foodoverhaulvanillafoods.apple_food_effect": "Apple",
 	"effect.foodoverhaulvanillafoods.baked_potato_food_effect": "Baked Potato",
@@ -49,5 +50,13 @@
 	"effect.foodoverhaulvanillafoods.tropical_fish_food_effect": "Tropical Fish",
 
 	"foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement": "Cake Recipe Replacement",
-	"foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items": "Food Overhaul - Vanilla Items"
+	"foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items": "Food Overhaul - Vanilla Items",
+
+	"foodoverhaulvanillafoods.server": "Server Side Settings",
+
+	"foodoverhaulvanillafoods.server.enable_health_regeneration_overhaul_compatibility": "Enable Health Regeneration Overhaul Compat",
+	"foodoverhaulvanillafoods.server.enable_mana_attributes_compatibility": "Enable Mana Attributes Compat",
+	"foodoverhaulvanillafoods.server.enable_overhauled_damage_compatibility": "Enable Overhauled Damage Compat",
+	"foodoverhaulvanillafoods.server.enable_stamina_attributes_compatibility": "Enable Stamina Attributes Compat"
+
 }
