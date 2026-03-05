@@ -8,7 +8,7 @@
             {
               "id": "foodoverhaulvanillafoods:sweet_berries_food_effect",
               "amplifier": 0,
-              "duration": 18000,
+              "duration": 600,
               "ambient": false,
               "show_particles": false,
               "show_icon": true

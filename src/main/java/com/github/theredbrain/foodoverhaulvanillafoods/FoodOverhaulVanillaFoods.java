@@ -105,6 +105,7 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 		Optional<ModContainer> optionalModContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
 		if (optionalModContainer.isPresent()) {
 			ResourceManagerHelper.registerBuiltinResourcePack(identifier("cake_recipe_replacement"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement"), ResourcePackActivationType.DEFAULT_ENABLED);
+			ResourceManagerHelper.registerBuiltinResourcePack(identifier("finite_plants_compat"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.finite_plants_compat"), ResourcePackActivationType.DEFAULT_ENABLED);
 			ResourceManagerHelper.registerBuiltinResourcePack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items"), ResourcePackActivationType.DEFAULT_ENABLED);
 		}
 	}

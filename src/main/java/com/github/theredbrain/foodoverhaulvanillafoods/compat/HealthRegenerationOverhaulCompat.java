@@ -4,6 +4,7 @@ import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
 import com.github.theredbrain.healthregenerationoverhaul.HealthRegenerationOverhaul;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 
 public class HealthRegenerationOverhaulCompat {
 	public static void addAttributes() {
@@ -46,27 +47,27 @@ public class HealthRegenerationOverhaulCompat {
 		StatusEffectsRegistry.COD_FOOD_EFFECT
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		StatusEffectsRegistry.COOKED_BEEF_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_CHICKEN_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_COD_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_MUTTON_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_PORKCHOP_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_RABBIT_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_SALMON_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		StatusEffectsRegistry.COOKED_BEEF_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_CHICKEN_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_COD_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_MUTTON_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_PORKCHOP_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_RABBIT_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_SALMON_FOOD_EFFECT
+//				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		StatusEffectsRegistry.COOKIE_FOOD_EFFECT
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
@@ -76,6 +77,9 @@ public class HealthRegenerationOverhaulCompat {
 		StatusEffectsRegistry.ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
+		StatusEffectsRegistry.GLOW_BERRIES_FOOD_EFFECT
+				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.glow_berries_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+		;
 		StatusEffectsRegistry.GOLDEN_APPLE_FOOD_EFFECT
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
@@ -83,7 +87,7 @@ public class HealthRegenerationOverhaulCompat {
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.MELON_SLICE_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.MUSHROOM_STEW_FOOD_EFFECT
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -116,7 +120,7 @@ public class HealthRegenerationOverhaulCompat {
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.SWEET_BERRIES_FOOD_EFFECT
-				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.TROPICAL_FISH_FOOD_EFFECT
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 0.5F, EntityAttributeModifier.Operation.ADD_VALUE)

@@ -7,10 +7,10 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 
 public class StaminaAttributesCompat {
 	public static void addAttributes() {
-		StatusEffectsRegistry.APPLE_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		StatusEffectsRegistry.APPLE_FOOD_EFFECT
+//				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		StatusEffectsRegistry.BAKED_POTATO_FOOD_EFFECT
 				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 7.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -51,40 +51,40 @@ public class StaminaAttributesCompat {
 				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.COCOA_BEANS_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.COD_FOOD_EFFECT
 				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		StatusEffectsRegistry.COOKED_BEEF_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		StatusEffectsRegistry.COOKED_BEEF_FOOD_EFFECT
+//				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 2.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		StatusEffectsRegistry.COOKED_CHICKEN_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 6.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.COOKED_COD_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		StatusEffectsRegistry.COOKED_MUTTON_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
-		StatusEffectsRegistry.COOKED_PORKCHOP_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		StatusEffectsRegistry.COOKED_MUTTON_FOOD_EFFECT
+//				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
+//		StatusEffectsRegistry.COOKED_PORKCHOP_FOOD_EFFECT
+//				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		StatusEffectsRegistry.COOKED_RABBIT_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 6.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.COOKED_SALMON_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.COOKIE_FOOD_EFFECT
 				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -145,9 +145,9 @@ public class StaminaAttributesCompat {
 		StatusEffectsRegistry.SUSPICIOUS_STEW_FOOD_EFFECT
 				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		StatusEffectsRegistry.SWEET_BERRIES_FOOD_EFFECT
-				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		StatusEffectsRegistry.SWEET_BERRIES_FOOD_EFFECT
+//				.addAttributeModifier(StaminaAttributes.MAX_STAMINA, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//				.addAttributeModifier(StaminaAttributes.STAMINA_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 	}
 }

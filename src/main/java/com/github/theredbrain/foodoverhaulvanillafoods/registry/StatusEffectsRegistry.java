@@ -62,9 +62,9 @@ public class StatusEffectsRegistry {
 	public static void registerEffects() {
 
 		// region --- Attribute Modifiers ---
-		APPLE_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		APPLE_FOOD_EFFECT
+//				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		BAKED_POTATO_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
@@ -95,9 +95,9 @@ public class StatusEffectsRegistry {
 		CHORUS_FRUIT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 1.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		COCOA_BEANS_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		COCOA_BEANS_FOOD_EFFECT
+//				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		COD_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
@@ -105,10 +105,10 @@ public class StatusEffectsRegistry {
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_CHICKEN_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 7.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_COD_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_MUTTON_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -117,10 +117,10 @@ public class StatusEffectsRegistry {
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_RABBIT_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 7.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_SALMON_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKIE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -131,18 +131,18 @@ public class StatusEffectsRegistry {
 		ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		GLOW_BERRIES_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.glow_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		GLOW_BERRIES_FOOD_EFFECT
+//				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.glow_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		GOLDEN_APPLE_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		GOLDEN_CARROT_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		MELON_SLICE_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		MELON_SLICE_FOOD_EFFECT
+//				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		MUSHROOM_STEW_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
@@ -150,7 +150,7 @@ public class StatusEffectsRegistry {
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		PORKCHOP_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.porkchop_porkchop_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.porkchop_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
 		POTATO_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
@@ -164,9 +164,9 @@ public class StatusEffectsRegistry {
 		RABBIT_STEW_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 15.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		ROTTEN_FLESH_FOOD_EFFECT
-				.addAttributeModifier(FoodOverhaul.MAX_FOOD_EFFECTS, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-		;
+//		ROTTEN_FLESH_FOOD_EFFECT
+//				.addAttributeModifier(FoodOverhaul.MAX_FOOD_EFFECTS, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+//		;
 		SALMON_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
@@ -176,9 +176,9 @@ public class StatusEffectsRegistry {
 		SUSPICIOUS_STEW_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
-		SWEET_BERRIES_FOOD_EFFECT
-				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
-		;
+//		SWEET_BERRIES_FOOD_EFFECT
+//				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
+//		;
 		TROPICAL_FISH_FOOD_EFFECT
 				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 		;
