@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
 	id "com.matthewprenger.cursegradle" version "1.4.0"
 	id "com.github.breadmoirai.github-release" version "2.4.1"
 	id "com.modrinth.minotaur" version "2.+"
@@ -13,11 +13,6 @@ base {
 }
 
 repositories {
-	// Fzzy Config
-	maven {
-		name = "FzzyMaven"
-		url = "https://maven.fzzyhmstrs.me/"
-	}
 
 	// Food Overhaul, Mana Attributes, Stamina Attributes, Overhauled Damage, Health Regeneration Overhaul, Resource Bar API
 	maven {
@@ -26,6 +21,16 @@ repositories {
 		content {
 			includeGroup "maven.modrinth"
 		}
+	}
+
+	// Fzzy Config
+	maven {
+		name = "FzzyMaven"
+		url = "https://maven.fzzyhmstrs.me/"
+	}
+
+	flatDir {
+		dirs("libs")
 	}
 
 }
@@ -45,35 +50,37 @@ loom {
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	// Fzzy Config
-	modImplementation"me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}"
+	implementation ("me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}") {
+		exclude(group: "me.lucko")
+		exclude(group: "com.terraformersmc")
+	}
 
 	// Mana Attributes
-	modImplementation "maven.modrinth:mana-attributes:${project.mana_attributes_version}"
+	implementation "maven.modrinth:mana-attributes:${project.mana_attributes_version}"
 
 	// Stamina Attributes
-	modImplementation "maven.modrinth:stamina-attributes:${project.stamina_attributes_version}"
-//	modImplementation(files("libs/stamina-attributes-${project.stamina_attributes_version}.jar"))
+	implementation "maven.modrinth:stamina-attributes:${project.stamina_attributes_version}"
+//	implementation(files("libs/stamina-attributes-${project.stamina_attributes_version}.jar"))
 
 	// Overhauled Damage
-//	modImplementation "maven.modrinth:overhauled-damage:${project.overhauled_damage_version}"
-//	modImplementation(files("libs/overhauled-damage-${project.overhauled_damage_version}.jar"))
+	implementation "maven.modrinth:overhauled-damage:${project.overhauled_damage_version}"
+//	implementation(files("libs/overhauled-damage-${project.overhauled_damage_version}.jar"))
 
 	// Health Regeneration Overhaul
-	modImplementation "maven.modrinth:health-regeneration-overhaul:${project.health_regeneration_overhaul_version}"
+	implementation "maven.modrinth:health-regeneration-overhaul:${project.health_regeneration_overhaul_version}"
 
 	// Food Overhaul
-//	modImplementation "maven.modrinth:food-overhaul:${project.food_overhaul_version}"
-	modImplementation(files("libs/food-overhaul-${project.food_overhaul_version}.jar"))
+//	implementation "maven.modrinth:food-overhaul:${project.food_overhaul_version}"
+	implementation(files("libs/food-overhaul-${project.food_overhaul_version}.jar"))
 
 	// Resource Bar API
-	modImplementation "maven.modrinth:resource-bar-api:${project.resource_bar_api_version}"
+	implementation "maven.modrinth:resource-bar-api:${project.resource_bar_api_version}"
 
 }
 
@@ -87,7 +94,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
+	it.options.release = 25
 }
 
 java {
@@ -96,8 +103,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
 }
 
 jar {
@@ -113,40 +120,39 @@ ext.changelog_last_section = { ->
 if (project.hasProperty('release_type')) {
 	tasks.register("publishMod") {
 		dependsOn(build)
-		finalizedBy(tasks.curseforge)
+//		finalizedBy(tasks.curseforge)
 		finalizedBy(tasks.modrinth)
 		finalizedBy(tasks.githubRelease)
 	}
 
-	curseforge {
-		apiKey = System.getenv("CURSEFORGE_API_KEY")
-		project {
-			id = System.getenv("CURSEFORGE_PROJECT_ID")
-			changelog = changelog_last_section()
-			changelogType = 'markdown'
-			releaseType = release_type
-			addGameVersion "${project.minecraft_version}"
-			addGameVersion "Fabric"
-
-			relations {
-				requiredDependency 'fabric-api'
-				requiredDependency 'food-overhaul'
-				optionalDependency 'health-regeneration-overhaul'
-				optionalDependency 'mana-attributes'
-				optionalDependency 'overhauled-damage'
-				optionalDependency 'stamina-attributes'
-				optionalDependency 'default-components'
-			}
-
-			mainArtifact(remapJar)
-			afterEvaluate {
-				uploadTask.dependsOn(remapJar)
-			}
-			options {
-				forgeGradleIntegration = false
-			}
-		}
-	}
+//	curseforge {
+//		apiKey = System.getenv("CURSEFORGE_API_KEY")
+//		project {
+//			id = System.getenv("CURSEFORGE_PROJECT_ID")
+//			changelog = changelog_last_section()
+//			changelogType = 'markdown'
+//			releaseType = release_type
+//			addGameVersion "${project.minecraft_version}"
+//			addGameVersion "Fabric"
+//
+//			relations {
+//				requiredDependency 'fabric-api'
+//				requiredDependency 'food-overhaul'
+//				optionalDependency 'health-regeneration-overhaul'
+//				optionalDependency 'mana-attributes'
+//				optionalDependency 'overhauled-damage'
+//				optionalDependency 'stamina-attributes'
+//			}
+//
+//			mainArtifact(jar)
+//			afterEvaluate {
+//				uploadTask.dependsOn(jar)
+//			}
+//			options {
+//				forgeGradleIntegration = false
+//			}
+//		}
+//	}
 
 	modrinth {
 		token = System.getenv("MODRINTH_API_KEY")
@@ -156,8 +162,8 @@ if (project.hasProperty('release_type')) {
 		versionNumber = "${version}"
 		// You don't need to set this manually. Will fail if Modrinth has this version already
 		versionType = release_type // This is the default -- can also be `beta` or `alpha`
-		uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
-		gameVersions = ["${project.minecraft_version}"] // Must be an array, even with only one version
+		uploadFile = jar // With Loom, this MUST be set to `remapJar` instead of `jar`!
+		gameVersions = ["${project.minecraft_version}", "${project.minecraft_version}.1", "${project.minecraft_version}.2"] // Must be an array, even with only one version
 		loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
 		changelog = changelog_last_section()
 		dependencies { // A special DSL for creating dependencies
@@ -170,7 +176,6 @@ if (project.hasProperty('release_type')) {
 			optional.project 'mana-attributes'
 			optional.project 'overhauled-damage'
 			optional.project 'stamina-attributes'
-			optional.project 'default-components'
 		}
 	}
 
