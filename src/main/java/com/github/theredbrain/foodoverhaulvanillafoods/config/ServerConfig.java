@@ -12,6 +12,8 @@ public class ServerConfig extends Config {
 		super(FoodOverhaulVanillaFoods.identifier("server"));
 	}
 
+	public ValidatedBoolean modify_vanilla_items = new ValidatedBoolean(true);
+
 	public ValidatedBoolean enable_health_regeneration_overhaul_compatibility = new ValidatedBoolean(true);
 	public ValidatedBoolean enable_mana_attributes_compatibility = new ValidatedBoolean(true);
 	public ValidatedBoolean enable_overhauled_damage_compatibility = new ValidatedBoolean(true);

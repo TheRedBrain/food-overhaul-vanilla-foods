@@ -6,17 +6,24 @@ import com.github.theredbrain.foodoverhaulvanillafoods.compat.OverhauledDamageCo
 import com.github.theredbrain.foodoverhaulvanillafoods.compat.StaminaAttributesCompat;
 import com.github.theredbrain.foodoverhaulvanillafoods.config.ServerConfig;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.BlockRegistry;
+import com.github.theredbrain.foodoverhaulvanillafoods.registry.ModifyDataComponentHelper;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
 import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
+import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Holder;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.Consumable;
+import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -105,9 +112,12 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 		if (SERVER_CONFIG.modify_vanilla_items.get()) {
 			ModifyDataComponentHelper.init();
 		}
+
 		Optional<ModContainer> optionalModContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
 		if (optionalModContainer.isPresent()) {
-			ResourceManagerHelper.registerBuiltinResourcePack(identifier("cake_recipe_replacement"), optionalModContainer.get(), Text.translatable("foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement"), ResourcePackActivationType.DEFAULT_ENABLED);
+			ResourceLoader.registerBuiltinPack(identifier("cake_recipe_replacement"), optionalModContainer.get(), Component.translatable("foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement"), PackActivationType.DEFAULT_ENABLED);
+//			ResourceLoader.registerBuiltinPack(identifier("finite_plants_compat"), optionalModContainer.get(), Component.translatable("foodoverhaulvanillafoods.builtin_resource_packs.finite_plants_compat"), PackActivationType.DEFAULT_ENABLED);
+//			ResourceLoader.registerBuiltinPack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Component.translatable("foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items"), PackActivationType.DEFAULT_ENABLED);
 		}
 	}
 
