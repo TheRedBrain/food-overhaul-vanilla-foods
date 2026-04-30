@@ -54,6 +54,7 @@
 
 	"foodoverhaulvanillafoods.server": "Server Side Settings",
 
+	"foodoverhaulvanillafoods.server.modify_vanilla_items": "Modify Vanilla Items",
 	"foodoverhaulvanillafoods.server.enable_health_regeneration_overhaul_compatibility": "Enable Health Regeneration Overhaul Compat",
 	"foodoverhaulvanillafoods.server.enable_mana_attributes_compatibility": "Enable Mana Attributes Compat",
 	"foodoverhaulvanillafoods.server.enable_overhauled_damage_compatibility": "Enable Overhauled Damage Compat",

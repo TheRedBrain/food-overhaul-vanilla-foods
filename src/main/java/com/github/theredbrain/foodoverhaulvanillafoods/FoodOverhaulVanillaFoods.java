@@ -10,8 +10,6 @@ import com.github.theredbrain.foodoverhaulvanillafoods.registry.ModifyDataCompon
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.StatusEffectsRegistry;
 import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
 import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -20,10 +18,6 @@ import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.Consumable;
-import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

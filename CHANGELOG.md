@@ -1,6 +1,6 @@
 # 2.0.0
 
-- updated to Minecraft 1.21.10 and Food Overhaul 3.0.0
+- updated to Minecraft 26.1.x
 
 # 1.1.0
 

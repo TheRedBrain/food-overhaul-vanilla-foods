@@ -76,8 +76,8 @@ dependencies {
 	implementation "maven.modrinth:health-regeneration-overhaul:${project.health_regeneration_overhaul_version}"
 
 	// Food Overhaul
-//	implementation "maven.modrinth:food-overhaul:${project.food_overhaul_version}"
-	implementation(files("libs/food-overhaul-${project.food_overhaul_version}.jar"))
+	implementation "maven.modrinth:food-overhaul:${project.food_overhaul_version}"
+//	implementation(files("libs/food-overhaul-${project.food_overhaul_version}.jar"))
 
 	// Resource Bar API
 	implementation "maven.modrinth:resource-bar-api:${project.resource_bar_api_version}"
