@@ -1,8 +1,8 @@
 package com.github.theredbrain.foodoverhaulvanillafoods.registry;
 
+import com.github.theredbrain.foodoverhaul.FoodOverhaul;
 import com.github.theredbrain.foodoverhaul.entity.effect.FoodStatusEffect;
 import com.github.theredbrain.foodoverhaul.entity.effect.RemoveEffectsInTagStatusEffect;
-import com.github.theredbrain.foodoverhaul.entity.effect.RemoveFoodStatusEffect;
 import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;

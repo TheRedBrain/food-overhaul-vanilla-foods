@@ -79,14 +79,30 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.BROWN_MUSHROOM);
-			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
-					FoodOverhaulVanillaFoods.CARROT_FOOD_EFFECT,
-					18000,
-					0,
-					false,
-					false,
-					true
-			), Items.CARROT);
+			context.modify(Items.CARROT, builder -> {
+				builder.set(DataComponents.FOOD, null);
+				if (serverConfig.enable_finite_plants_integration.get()) {
+					builder.set(DataComponents.CONSUMABLE, null);
+				} else {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.EAT)
+							.sound(SoundEvents.GENERIC_EAT)
+							.hasConsumeParticles(true)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(List.of(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.CARROT_FOOD_EFFECT,
+													18000,
+													0,
+													false,
+													false,
+													true
+											)
+									))).build());
+				}
+			});
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.CHICKEN_FOOD_EFFECT,
 					12000,
@@ -114,14 +130,27 @@ public class ModifyDataComponentHelper {
 								)))
 						.onConsume(new TeleportRandomlyConsumeEffect()).build());
 			});
-			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
-					FoodOverhaulVanillaFoods.COCOA_BEANS_FOOD_EFFECT,
-					18000,
-					0,
-					false,
-					false,
-					true
-			), Items.COCOA_BEANS);
+			context.modify(Items.COCOA_BEANS, builder -> {
+				if (!serverConfig.enable_finite_plants_integration.get()) {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.EAT)
+							.sound(SoundEvents.GENERIC_EAT)
+							.hasConsumeParticles(true)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(List.of(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.COCOA_BEANS_FOOD_EFFECT,
+													18000,
+													0,
+													false,
+													false,
+													true
+											)
+									))).build());
+				}
+			});
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.COD_FOOD_EFFECT,
 					12000,
@@ -236,24 +265,28 @@ public class ModifyDataComponentHelper {
 			), Items.FERMENTED_SPIDER_EYE);
 			context.modify(Items.GLOW_BERRIES, builder -> {
 				builder.set(DataComponents.FOOD, null);
-				builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
-				builder.set(DataComponents.CONSUMABLE, Consumable.builder()
-						.consumeSeconds(1.6F)
-						.animation(ItemUseAnimation.EAT)
-						.sound(SoundEvents.GENERIC_EAT)
-						.hasConsumeParticles(true)
-						.onConsume(
-								new ApplyStatusEffectsConsumeEffect(List.of(
-										new MobEffectInstance(
-												FoodOverhaulVanillaFoods.GLOW_BERRIES_FOOD_EFFECT,
-												18000,
-												0,
-												false,
-												false,
-												true
-										),
-										new MobEffectInstance(MobEffects.GLOWING, 18000, 0)
-								))).build());
+				if (serverConfig.enable_finite_plants_integration.get()) {
+					builder.set(DataComponents.CONSUMABLE, null);
+				} else {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.EAT)
+							.sound(SoundEvents.GENERIC_EAT)
+							.hasConsumeParticles(true)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(List.of(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.GLOW_BERRIES_FOOD_EFFECT,
+													18000,
+													0,
+													false,
+													false,
+													true
+											),
+											new MobEffectInstance(MobEffects.GLOWING, 18000, 0)
+									))).build());
+				}
 			});
 			context.modify(Items.GOLDEN_APPLE, builder -> {
 				builder.set(DataComponents.FOOD, null);
@@ -381,14 +414,30 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.PORKCHOP);
-			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
-					FoodOverhaulVanillaFoods.POTATO_FOOD_EFFECT,
-					12000,
-					0,
-					false,
-					false,
-					true
-			), Items.POTATO);
+			context.modify(Items.POTATO, builder -> {
+				builder.set(DataComponents.FOOD, null);
+				if (serverConfig.enable_finite_plants_integration.get()) {
+					builder.set(DataComponents.CONSUMABLE, null);
+				} else {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.EAT)
+							.sound(SoundEvents.GENERIC_EAT)
+							.hasConsumeParticles(true)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(List.of(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.POTATO_FOOD_EFFECT,
+													12000,
+													0,
+													false,
+													false,
+													true
+											)
+									))).build());
+				}
+			});
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.PUFFERFISH_FOOD_EFFECT,
 					12000,
@@ -397,14 +446,29 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.PUFFERFISH);
-			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
-					FoodOverhaulVanillaFoods.PUMPKIN_PIE_FOOD_EFFECT,
-					30000,
-					0,
-					false,
-					false,
-					true
-			), Items.PUMPKIN_PIE);
+			context.modify(Items.PUMPKIN_PIE, builder -> {
+				builder.set(DataComponents.FOOD, null);
+				if (serverConfig.is_pumpkin_pie_consumable.get()) {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.EAT)
+							.sound(SoundEvents.GENERIC_EAT)
+							.hasConsumeParticles(true)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.PUMPKIN_PIE_FOOD_EFFECT,
+													30000,
+													0,
+													false,
+													false,
+													true
+											))).build());
+				} else {
+					builder.set(DataComponents.CONSUMABLE, null);
+				}
+			});
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.RABBIT_FOOD_EFFECT,
 					12000,
@@ -461,14 +525,30 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.SUGAR);
-			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
-					FoodOverhaulVanillaFoods.SWEET_BERRIES_FOOD_EFFECT,
-					600,
-					0,
-					false,
-					false,
-					true
-			), Items.SWEET_BERRIES);
+			context.modify(Items.SWEET_BERRIES, builder -> {
+				builder.set(DataComponents.FOOD, null);
+				if (serverConfig.enable_finite_plants_integration.get()) {
+					builder.set(DataComponents.CONSUMABLE, null);
+				} else {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.EAT)
+							.sound(SoundEvents.GENERIC_EAT)
+							.hasConsumeParticles(true)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(List.of(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.SWEET_BERRIES_FOOD_EFFECT,
+													18000,
+													0,
+													false,
+													false,
+													true
+											)
+									))).build());
+				}
+			});
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.TROPICAL_FISH_FOOD_EFFECT,
 					12000,
