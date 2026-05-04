@@ -100,8 +100,8 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 		LOGGER.info("Even more overhauled food!");
 		SERVER_CONFIG = ConfigApiJava.registerAndLoadConfig(ServerConfig::new);
 
-		BlockRegistry.init();
 		StatusEffectsRegistry.registerEffects();
+		BlockRegistry.init();
 
 		if (SERVER_CONFIG.modify_vanilla_items.get()) {
 			ModifyDataComponentHelper.init();

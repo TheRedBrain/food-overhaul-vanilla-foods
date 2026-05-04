@@ -1,6 +1,7 @@
 package com.github.theredbrain.foodoverhaulvanillafoods.registry;
 
 import com.github.theredbrain.foodoverhaul.entity.effect.FoodStatusEffect;
+import com.github.theredbrain.foodoverhaul.entity.effect.RemoveEffectsInTagStatusEffect;
 import com.github.theredbrain.foodoverhaul.entity.effect.RemoveFoodStatusEffect;
 import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
 import net.minecraft.core.Holder;
@@ -50,7 +51,7 @@ public class StatusEffectsRegistry {
 	public static final MobEffect RABBIT_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect RABBIT_STEW_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect RED_MUSHROOM_FOOD_EFFECT = new FoodStatusEffect();
-	public static final MobEffect ROTTEN_FLESH_FOOD_EFFECT = new RemoveFoodStatusEffect();
+	public static final MobEffect ROTTEN_FLESH_FOOD_EFFECT = new RemoveEffectsInTagStatusEffect(FoodOverhaul.FOOD_EFFECTS);
 	public static final MobEffect SALMON_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect SPIDER_EYE_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect SUGAR_FOOD_EFFECT = new FoodStatusEffect();
