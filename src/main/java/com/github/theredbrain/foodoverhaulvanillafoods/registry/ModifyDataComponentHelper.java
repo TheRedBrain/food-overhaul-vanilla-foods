@@ -1,6 +1,7 @@
 package com.github.theredbrain.foodoverhaulvanillafoods.registry;
 
 import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
+import com.github.theredbrain.foodoverhaulvanillafoods.config.ServerConfig;
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class ModifyDataComponentHelper {
 
-	public static void init() {
+	public static void init(ServerConfig serverConfig) {
 
 		DefaultItemComponentEvents.MODIFY.register(context -> {
 
@@ -311,6 +312,43 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.MELON_SLICE);
+			if (serverConfig.milk_bucket_functionality.get() == FoodOverhaulVanillaFoods.MilkFunctionality.FOOD) {
+				context.modify(Items.MILK_BUCKET, builder -> {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.DRINK)
+							.sound(SoundEvents.GENERIC_DRINK)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.MILK_FOOD_EFFECT,
+													12000,
+													0,
+													false,
+													false,
+													false
+											))).build());
+				});
+			} else if (serverConfig.milk_bucket_functionality.get() == FoodOverhaulVanillaFoods.MilkFunctionality.REMOVE_EFFECTS_IN_TAG) {
+				context.modify(Items.MILK_BUCKET, builder -> {
+					builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+					builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+							.consumeSeconds(1.6F)
+							.animation(ItemUseAnimation.DRINK)
+							.sound(SoundEvents.GENERIC_DRINK)
+							.onConsume(
+									new ApplyStatusEffectsConsumeEffect(
+											new MobEffectInstance(
+													FoodOverhaulVanillaFoods.REMOVE_EFFECTS_MILK_FOOD_EFFECT,
+													1,
+													0,
+													false,
+													false,
+													false
+											))).build());
+				});
+			}
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.MUSHROOM_STEW_FOOD_EFFECT,
 					30000,

@@ -41,6 +41,8 @@ public class StatusEffectsRegistry {
 	public static final MobEffect GOLDEN_CARROT_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect HONEY_BOTTLE_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect MELON_SLICE_FOOD_EFFECT = new FoodStatusEffect();
+	public static final MobEffect REMOVE_EFFECTS_MILK_FOOD_EFFECT = new RemoveEffectsInTagStatusEffect(FoodOverhaulVanillaFoods.REMOVED_BY_MILK);
+	public static final MobEffect MILK_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect MUSHROOM_STEW_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect MUTTON_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect POISONOUS_POTATO_FOOD_EFFECT = new FoodStatusEffect();
@@ -143,6 +145,9 @@ public class StatusEffectsRegistry {
 //		MELON_SLICE_FOOD_EFFECT
 //				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 //		;
+//		MILK_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 		MUSHROOM_STEW_FOOD_EFFECT
 				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
@@ -215,6 +220,8 @@ public class StatusEffectsRegistry {
 		FoodOverhaulVanillaFoods.GOLDEN_CARROT_FOOD_EFFECT = register("golden_carrot_food_effect", GOLDEN_CARROT_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.HONEY_BOTTLE_FOOD_EFFECT = register("honey_bottle_food_effect", HONEY_BOTTLE_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.MELON_SLICE_FOOD_EFFECT = register("melon_slice_food_effect", MELON_SLICE_FOOD_EFFECT);
+		FoodOverhaulVanillaFoods.REMOVE_EFFECTS_MILK_FOOD_EFFECT = register("remove_effects_milk_food_effect", REMOVE_EFFECTS_MILK_FOOD_EFFECT);
+		FoodOverhaulVanillaFoods.MILK_FOOD_EFFECT = register("milk_food_effect", MILK_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.MUSHROOM_STEW_FOOD_EFFECT = register("mushroom_stew_food_effect", MUSHROOM_STEW_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.MUTTON_FOOD_EFFECT = register("mutton_food_effect", MUTTON_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.POISONOUS_POTATO_FOOD_EFFECT = register("poisonous_potato_food_effect", POISONOUS_POTATO_FOOD_EFFECT);

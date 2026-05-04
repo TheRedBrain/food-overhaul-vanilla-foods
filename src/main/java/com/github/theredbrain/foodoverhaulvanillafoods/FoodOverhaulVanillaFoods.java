@@ -15,8 +15,10 @@ import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.core.Holder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +29,8 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static final String MOD_ID = "foodoverhaulvanillafoods";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static ServerConfig SERVER_CONFIG;
+
+	public static TagKey<MobEffect> REMOVED_BY_MILK = TagKey.create(Registries.MOB_EFFECT, identifier("removed_by_milk"));
 
 	public static final boolean isHealthRegenerationOverhaulLoaded = FabricLoader.getInstance().isModLoaded("healthregenerationoverhaul");
 	public static final boolean isManaAttributesLoaded = FabricLoader.getInstance().isModLoaded("manaattributes");
@@ -77,6 +81,8 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static Holder<MobEffect> GOLDEN_CARROT_FOOD_EFFECT;
 	public static Holder<MobEffect> HONEY_BOTTLE_FOOD_EFFECT;
 	public static Holder<MobEffect> MELON_SLICE_FOOD_EFFECT;
+	public static Holder<MobEffect> REMOVE_EFFECTS_MILK_FOOD_EFFECT;
+	public static Holder<MobEffect> MILK_FOOD_EFFECT;
 	public static Holder<MobEffect> MUSHROOM_STEW_FOOD_EFFECT;
 	public static Holder<MobEffect> MUTTON_FOOD_EFFECT;
 	public static Holder<MobEffect> POISONOUS_POTATO_FOOD_EFFECT;
@@ -104,7 +110,7 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 		BlockRegistry.init();
 
 		if (SERVER_CONFIG.modify_vanilla_items.get()) {
-			ModifyDataComponentHelper.init();
+			ModifyDataComponentHelper.init(SERVER_CONFIG);
 		}
 
 		Optional<ModContainer> optionalModContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
@@ -113,6 +119,12 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 //			ResourceLoader.registerBuiltinPack(identifier("finite_plants_compat"), optionalModContainer.get(), Component.translatable("foodoverhaulvanillafoods.builtin_resource_packs.finite_plants_compat"), PackActivationType.DEFAULT_ENABLED);
 //			ResourceLoader.registerBuiltinPack(identifier("food_overhaul_vanilla_items"), optionalModContainer.get(), Component.translatable("foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items"), PackActivationType.DEFAULT_ENABLED);
 		}
+	}
+
+	public enum MilkFunctionality {
+		VANILLA,
+		REMOVE_EFFECTS_IN_TAG,
+		FOOD
 	}
 
 	public static Identifier identifier(String path) {
