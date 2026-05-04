@@ -45,6 +45,7 @@ public class StatusEffectsRegistry {
 	public static final MobEffect MILK_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect MUSHROOM_STEW_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect MUTTON_FOOD_EFFECT = new FoodStatusEffect();
+	public static final MobEffect NETHER_WART_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect POISONOUS_POTATO_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect PORKCHOP_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect POTATO_FOOD_EFFECT = new FoodStatusEffect();
@@ -154,6 +155,9 @@ public class StatusEffectsRegistry {
 		MUTTON_FOOD_EFFECT
 				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
+		NETHER_WART_FOOD_EFFECT
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+		;
 		PORKCHOP_FOOD_EFFECT
 				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.porkchop_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
@@ -224,6 +228,7 @@ public class StatusEffectsRegistry {
 		FoodOverhaulVanillaFoods.MILK_FOOD_EFFECT = register("milk_food_effect", MILK_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.MUSHROOM_STEW_FOOD_EFFECT = register("mushroom_stew_food_effect", MUSHROOM_STEW_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.MUTTON_FOOD_EFFECT = register("mutton_food_effect", MUTTON_FOOD_EFFECT);
+		FoodOverhaulVanillaFoods.NETHER_WART_FOOD_EFFECT = register("nether_wart_food_effect", NETHER_WART_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.POISONOUS_POTATO_FOOD_EFFECT = register("poisonous_potato_food_effect", POISONOUS_POTATO_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.PORKCHOP_FOOD_EFFECT = register("porkchop_food_effect", PORKCHOP_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.POTATO_FOOD_EFFECT = register("potato_food_effect", POTATO_FOOD_EFFECT);

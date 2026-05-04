@@ -398,6 +398,27 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.MUTTON);
+			if (!serverConfig.enable_finite_plants_integration.get()) {
+				context.modify(Items.NETHER_WART, builder -> {
+				builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
+				builder.set(DataComponents.CONSUMABLE, Consumable.builder()
+						.consumeSeconds(1.6F)
+						.animation(ItemUseAnimation.EAT)
+						.sound(SoundEvents.GENERIC_EAT)
+						.hasConsumeParticles(true)
+						.onConsume(
+								new ApplyStatusEffectsConsumeEffect(List.of(
+										new MobEffectInstance(
+												FoodOverhaulVanillaFoods.NETHER_WART_FOOD_EFFECT,
+												18000,
+												0,
+												false,
+												false,
+												true
+										)
+								))).build());
+				});
+			}
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.POISONOUS_POTATO_FOOD_EFFECT,
 					12000,

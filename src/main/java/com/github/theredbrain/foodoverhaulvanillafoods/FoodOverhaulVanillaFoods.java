@@ -85,6 +85,7 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static Holder<MobEffect> MILK_FOOD_EFFECT;
 	public static Holder<MobEffect> MUSHROOM_STEW_FOOD_EFFECT;
 	public static Holder<MobEffect> MUTTON_FOOD_EFFECT;
+	public static Holder<MobEffect> NETHER_WART_FOOD_EFFECT;
 	public static Holder<MobEffect> POISONOUS_POTATO_FOOD_EFFECT;
 	public static Holder<MobEffect> PORKCHOP_FOOD_EFFECT;
 	public static Holder<MobEffect> POTATO_FOOD_EFFECT;
