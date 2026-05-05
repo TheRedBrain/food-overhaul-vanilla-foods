@@ -23,6 +23,7 @@
 	"effect.foodoverhaulvanillafoods.cooked_rabbit_food_effect": "Cooked Rabbit",
 	"effect.foodoverhaulvanillafoods.cooked_salmon_food_effect": "Cooked Salmon",
 	"effect.foodoverhaulvanillafoods.cookie_food_effect": "Cookie",
+	"effect.foodoverhaulvanillafoods.crimson_fungus_food_effect": "Crimson Fungus",
 	"effect.foodoverhaulvanillafoods.dried_kelp_food_effect": "Dried Kelp",
 	"effect.foodoverhaulvanillafoods.enchanted_golden_apple_food_effect": "Enchanted Golden Apple",
 	"effect.foodoverhaulvanillafoods.fermented_spider_eye_food_effect": "Fermented Spider Eye",
@@ -52,6 +53,7 @@
 	"effect.foodoverhaulvanillafoods.suspicious_stew_food_effect": "Suspicious Stew",
 	"effect.foodoverhaulvanillafoods.sweet_berries_food_effect": "Sweet Berries",
 	"effect.foodoverhaulvanillafoods.tropical_fish_food_effect": "Tropical Fish",
+	"effect.foodoverhaulvanillafoods.warped_fungus_food_effect": "Warped Fungus",
 
 	"foodoverhaulvanillafoods.builtin_resource_packs.cake_recipe_replacement": "Cake Recipe Replacement",
 	"foodoverhaulvanillafoods.builtin_resource_packs.food_overhaul_vanilla_items": "Food Overhaul - Vanilla Items",
@@ -59,6 +61,10 @@
 	"foodoverhaulvanillafoods.server": "Server Side Settings",
 
 	"foodoverhaulvanillafoods.server.modify_vanilla_items": "Modify Vanilla Items",
+	"foodoverhaulvanillafoods.server.is_pumpkin_pie_consumable": "Is Pumpkin Pie Item Consumable",
+	"foodoverhaulvanillafoods.server.milk_bucket_functionality": "Milk Bucket Functionality",
+	"foodoverhaulvanillafoods.server.enable_finite_plants_integration": "Enable Finite Plants Integration",
+
 	"foodoverhaulvanillafoods.server.enable_health_regeneration_overhaul_compatibility": "Enable Health Regeneration Overhaul Compat",
 	"foodoverhaulvanillafoods.server.enable_mana_attributes_compatibility": "Enable Mana Attributes Compat",
 	"foodoverhaulvanillafoods.server.enable_overhauled_damage_compatibility": "Enable Overhauled Damage Compat",

@@ -22,6 +22,7 @@
     "foodoverhaulvanillafoods:cooked_rabbit_food_effect",
     "foodoverhaulvanillafoods:cooked_salmon_food_effect",
     "foodoverhaulvanillafoods:cookie_food_effect",
+    "foodoverhaulvanillafoods:crimson_fungus_food_effect",
     "foodoverhaulvanillafoods:dried_kelp_food_effect",
     "foodoverhaulvanillafoods:enchanted_golden_apple_food_effect",
     "foodoverhaulvanillafoods:fermented_spider_eye_food_effect",
@@ -30,8 +31,10 @@
     "foodoverhaulvanillafoods:golden_carrot_food_effect",
     "foodoverhaulvanillafoods:honey_bottle_food_effect",
     "foodoverhaulvanillafoods:melon_slice_food_effect",
+    "foodoverhaulvanillafoods:milk_food_effect",
     "foodoverhaulvanillafoods:mushroom_stew_food_effect",
     "foodoverhaulvanillafoods:mutton_food_effect",
+    "foodoverhaulvanillafoods:nether_wart_food_effect",
     "foodoverhaulvanillafoods:poisonous_potato_food_effect",
     "foodoverhaulvanillafoods:porkchop_food_effect",
     "foodoverhaulvanillafoods:potato_food_effect",
@@ -46,6 +49,7 @@
     "foodoverhaulvanillafoods:sugar_food_effect",
     "foodoverhaulvanillafoods:suspicious_stew_food_effect",
     "foodoverhaulvanillafoods:sweet_berries_food_effect",
-    "foodoverhaulvanillafoods:tropical_fish_food_effect"
+    "foodoverhaulvanillafoods:tropical_fish_food_effect",
+    "foodoverhaulvanillafoods:warped_fungus_food_effect"
   ]
 }
