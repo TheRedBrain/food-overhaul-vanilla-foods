@@ -38,8 +38,8 @@ public class BlockRegistry {
 							true
 					)
 			),
-			"minecraft:cookie",
-			"minecraft:iron_sword",
+			"farmersdelight:cake_slice",
+			"#farmersdelight:tools/knives",
 			"",
 			"",
 			0,
