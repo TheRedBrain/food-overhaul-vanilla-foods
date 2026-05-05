@@ -224,6 +224,14 @@ public class ModifyDataComponentHelper {
 					true
 			), Items.COOKIE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
+					FoodOverhaulVanillaFoods.CRIMSON_FUNGUS_FOOD_EFFECT,
+					6000,
+					0,
+					false,
+					false,
+					true
+			), Items.CRIMSON_FUNGUS);
+			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.DRIED_KELP_FOOD_EFFECT,
 					6000,
 					0,
@@ -578,6 +586,14 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.TROPICAL_FISH);
+			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
+					FoodOverhaulVanillaFoods.WARPED_FUNGUS_FOOD_EFFECT,
+					6000,
+					0,
+					false,
+					false,
+					true
+			), Items.WARPED_FUNGUS);
 		});
 	}
 

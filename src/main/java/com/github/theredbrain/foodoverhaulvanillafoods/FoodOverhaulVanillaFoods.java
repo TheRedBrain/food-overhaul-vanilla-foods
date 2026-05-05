@@ -73,6 +73,7 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static Holder<MobEffect> COOKED_RABBIT_FOOD_EFFECT;
 	public static Holder<MobEffect> COOKED_SALMON_FOOD_EFFECT;
 	public static Holder<MobEffect> COOKIE_FOOD_EFFECT;
+	public static Holder<MobEffect> CRIMSON_FUNGUS_FOOD_EFFECT;
 	public static Holder<MobEffect> DRIED_KELP_FOOD_EFFECT;
 	public static Holder<MobEffect> ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT;
 	public static Holder<MobEffect> FERMENTED_SPIDER_EYE_FOOD_EFFECT;
@@ -101,6 +102,7 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static Holder<MobEffect> SUSPICIOUS_STEW_FOOD_EFFECT;
 	public static Holder<MobEffect> SWEET_BERRIES_FOOD_EFFECT;
 	public static Holder<MobEffect> TROPICAL_FISH_FOOD_EFFECT;
+	public static Holder<MobEffect> WARPED_FUNGUS_FOOD_EFFECT;
 
 	@Override
 	public void onInitialize() {

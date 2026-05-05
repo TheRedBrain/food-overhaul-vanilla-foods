@@ -33,6 +33,7 @@ public class StatusEffectsRegistry {
 	public static final MobEffect COOKED_RABBIT_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect COOKED_SALMON_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect COOKIE_FOOD_EFFECT = new FoodStatusEffect();
+	public static final MobEffect CRIMSON_FUNGUS_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect DRIED_KELP_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect FERMENTED_SPIDER_EYE_FOOD_EFFECT = new FoodStatusEffect();
@@ -61,6 +62,7 @@ public class StatusEffectsRegistry {
 	public static final MobEffect SUSPICIOUS_STEW_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect SWEET_BERRIES_FOOD_EFFECT = new FoodStatusEffect();
 	public static final MobEffect TROPICAL_FISH_FOOD_EFFECT = new FoodStatusEffect();
+	public static final MobEffect WARPED_FUNGUS_FOOD_EFFECT = new FoodStatusEffect();
 
 	public static void registerEffects() {
 
@@ -216,6 +218,7 @@ public class StatusEffectsRegistry {
 		FoodOverhaulVanillaFoods.COOKED_RABBIT_FOOD_EFFECT = register("cooked_rabbit_food_effect", COOKED_RABBIT_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.COOKED_SALMON_FOOD_EFFECT = register("cooked_salmon_food_effect", COOKED_SALMON_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.COOKIE_FOOD_EFFECT = register("cookie_food_effect", COOKIE_FOOD_EFFECT);
+		FoodOverhaulVanillaFoods.CRIMSON_FUNGUS_FOOD_EFFECT = register("crimson_fungus_food_effect", CRIMSON_FUNGUS_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.DRIED_KELP_FOOD_EFFECT = register("dried_kelp_food_effect", DRIED_KELP_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT = register("enchanted_golden_apple_food_effect", ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.FERMENTED_SPIDER_EYE_FOOD_EFFECT = register("fermented_spider_eye_food_effect", FERMENTED_SPIDER_EYE_FOOD_EFFECT);
@@ -244,6 +247,7 @@ public class StatusEffectsRegistry {
 		FoodOverhaulVanillaFoods.SUSPICIOUS_STEW_FOOD_EFFECT = register("suspicious_stew_food_effect", SUSPICIOUS_STEW_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.SWEET_BERRIES_FOOD_EFFECT = register("sweet_berries_food_effect", SWEET_BERRIES_FOOD_EFFECT);
 		FoodOverhaulVanillaFoods.TROPICAL_FISH_FOOD_EFFECT = register("tropical_fish_food_effect", TROPICAL_FISH_FOOD_EFFECT);
+		FoodOverhaulVanillaFoods.WARPED_FUNGUS_FOOD_EFFECT = register("warped_fungus_food_effect", WARPED_FUNGUS_FOOD_EFFECT);
 
 	}
 
