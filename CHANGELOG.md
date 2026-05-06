@@ -15,6 +15,7 @@
 ## Changes
 
 - rebalanced all food effects and their durations. This is still theoretical, but at least it is consistent in itself. Feedback is appreciated!
+- moved the Overhauled Cake Block to the Food Overhaul creative mode tab
 
 # 2.0.0
 
