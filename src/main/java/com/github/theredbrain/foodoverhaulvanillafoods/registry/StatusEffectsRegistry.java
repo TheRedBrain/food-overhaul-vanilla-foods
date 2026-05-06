@@ -70,129 +70,129 @@ public class StatusEffectsRegistry {
 //		APPLE_FOOD_EFFECT
 //				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.apple_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 //		;
-		BAKED_POTATO_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		BEEF_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		BEETROOT_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beetroot_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		BEETROOT_SOUP_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 15.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		BREAD_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.bread_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		BROWN_MUSHROOM_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		CAKE_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		CARROT_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.carrot_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		CHICKEN_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		CHORUS_FRUIT_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		BAKED_POTATO_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.baked_potato_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		BEEF_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		BEETROOT_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beetroot_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		BEETROOT_SOUP_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 15.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		BREAD_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.bread_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		BROWN_MUSHROOM_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		CAKE_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		CARROT_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.carrot_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		CHICKEN_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		CHORUS_FRUIT_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.chorus_fruit_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 //		COCOA_BEANS_FOOD_EFFECT
 //				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cocoa_beans_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 //		;
-		COD_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		COD_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 		COOKED_BEEF_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_beef_food_effect"), 6.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_CHICKEN_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 7.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 6.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_COD_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 2.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_MUTTON_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_mutton_food_effect"), 6.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_PORKCHOP_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_porkchop_food_effect"), 6.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_RABBIT_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 7.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 6.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		COOKED_SALMON_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 2.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
-		COOKIE_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		DRIED_KELP_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.dried_kelp_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 15.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		COOKIE_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.cookie_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		DRIED_KELP_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.dried_kelp_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.enchanted_golden_apple_food_effect"), 15.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 //		GLOW_BERRIES_FOOD_EFFECT
 //				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.glow_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 //		;
-		GOLDEN_APPLE_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		GOLDEN_CARROT_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		GOLDEN_APPLE_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_apple_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		GOLDEN_CARROT_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.golden_carrot_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 //		MELON_SLICE_FOOD_EFFECT
 //				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 3.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 //		;
 //		MILK_FOOD_EFFECT
 //				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
 //		;
-		MUSHROOM_STEW_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		MUTTON_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		NETHER_WART_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		PORKCHOP_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.porkchop_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		POTATO_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		PUMPKIN_PIE_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		RABBIT_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		MUSHROOM_STEW_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		MUTTON_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		NETHER_WART_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.mutton_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		PORKCHOP_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.porkchop_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		POTATO_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		PUMPKIN_PIE_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		RABBIT_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 		RABBIT_STEW_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 15.0F, AttributeModifier.Operation.ADD_VALUE)
+				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 6.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 //		ROTTEN_FLESH_FOOD_EFFECT
 //				.addAttributeModifier(FoodOverhaul.MAX_FOOD_EFFECTS, FoodOverhaulVanillaFoods.identifier("effect.rabbit_stew_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
 //		;
-		SALMON_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		SUGAR_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sugar_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		SUSPICIOUS_STEW_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		SALMON_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		SUGAR_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sugar_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+//		SUSPICIOUS_STEW_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.suspicious_stew_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 //		SWEET_BERRIES_FOOD_EFFECT
 //				.addAttributeModifier(EntityAttributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.sweet_berries_food_effect"), 5.0F, EntityAttributeModifier.Operation.ADD_VALUE)
 //		;
-		TROPICAL_FISH_FOOD_EFFECT
-				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
+//		TROPICAL_FISH_FOOD_EFFECT
+//				.addAttributeModifier(Attributes.MAX_HEALTH, FoodOverhaulVanillaFoods.identifier("effect.tropical_fish_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
 		FoodOverhaulVanillaFoods.addModdedAttributesToFoodEffects();
 		// endregion --- Attribute Modifiers ---
 

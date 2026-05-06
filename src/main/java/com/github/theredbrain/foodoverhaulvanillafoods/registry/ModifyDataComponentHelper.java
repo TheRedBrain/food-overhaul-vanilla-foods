@@ -25,7 +25,7 @@ public class ModifyDataComponentHelper {
 
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.APPLE_FOOD_EFFECT,
-					12000,
+					24000,
 					0,
 					false,
 					false,
@@ -33,7 +33,7 @@ public class ModifyDataComponentHelper {
 			), Items.APPLE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.BAKED_POTATO_FOOD_EFFECT,
-					24000,
+					36000,
 					0,
 					false,
 					false,
@@ -57,7 +57,7 @@ public class ModifyDataComponentHelper {
 			), Items.BEETROOT);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.BEETROOT_SOUP_FOOD_EFFECT,
-					30000,
+					36000,
 					0,
 					false,
 					false,
@@ -65,7 +65,7 @@ public class ModifyDataComponentHelper {
 			), Items.BEETROOT_SOUP);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.BREAD_FOOD_EFFECT,
-					30000,
+					36000,
 					0,
 					false,
 					false,
@@ -73,7 +73,7 @@ public class ModifyDataComponentHelper {
 			), Items.BREAD);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.BROWN_MUSHROOM_FOOD_EFFECT,
-					18000,
+					6000,
 					0,
 					false,
 					false,
@@ -94,7 +94,7 @@ public class ModifyDataComponentHelper {
 									new ApplyStatusEffectsConsumeEffect(List.of(
 											new MobEffectInstance(
 													FoodOverhaulVanillaFoods.CARROT_FOOD_EFFECT,
-													18000,
+													24000,
 													0,
 													false,
 													false,
@@ -122,7 +122,7 @@ public class ModifyDataComponentHelper {
 						.onConsume(
 								new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(
 										FoodOverhaulVanillaFoods.CHORUS_FRUIT_FOOD_EFFECT,
-										12000,
+										6000,
 										0,
 										false,
 										false,
@@ -142,7 +142,7 @@ public class ModifyDataComponentHelper {
 									new ApplyStatusEffectsConsumeEffect(List.of(
 											new MobEffectInstance(
 													FoodOverhaulVanillaFoods.COCOA_BEANS_FOOD_EFFECT,
-													18000,
+													6000,
 													0,
 													false,
 													false,
@@ -217,7 +217,7 @@ public class ModifyDataComponentHelper {
 			), Items.COOKED_SALMON);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.COOKIE_FOOD_EFFECT,
-					6000,
+					12000,
 					0,
 					false,
 					false,
@@ -225,7 +225,7 @@ public class ModifyDataComponentHelper {
 			), Items.COOKIE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.CRIMSON_FUNGUS_FOOD_EFFECT,
-					6000,
+					24000,
 					0,
 					false,
 					false,
@@ -239,33 +239,17 @@ public class ModifyDataComponentHelper {
 					false,
 					true
 			), Items.DRIED_KELP);
-			context.modify(Items.ENCHANTED_GOLDEN_APPLE, builder -> {
-				builder.set(DataComponents.FOOD, null);
-				builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
-				builder.set(DataComponents.CONSUMABLE, Consumable.builder()
-						.consumeSeconds(1.6F)
-						.animation(ItemUseAnimation.EAT)
-						.sound(SoundEvents.GENERIC_EAT)
-						.hasConsumeParticles(true)
-						.onConsume(
-								new ApplyStatusEffectsConsumeEffect(List.of(
-										new MobEffectInstance(
-												FoodOverhaulVanillaFoods.ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT,
-												30000,
-												0,
-												false,
-												false,
-												true
-										),
-										new MobEffectInstance(MobEffects.REGENERATION, 400, 1),
-										new MobEffectInstance(MobEffects.RESISTANCE, 6000, 0),
-										new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0),
-										new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3)
-								))).build());
-			});
+			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
+					FoodOverhaulVanillaFoods.ENCHANTED_GOLDEN_APPLE_FOOD_EFFECT,
+					144000,
+					0,
+					false,
+					false,
+					true
+			), Items.ENCHANTED_GOLDEN_APPLE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.FERMENTED_SPIDER_EYE_FOOD_EFFECT,
-					12000,
+					36000,
 					0,
 					false,
 					false,
@@ -286,41 +270,27 @@ public class ModifyDataComponentHelper {
 									new ApplyStatusEffectsConsumeEffect(List.of(
 											new MobEffectInstance(
 													FoodOverhaulVanillaFoods.GLOW_BERRIES_FOOD_EFFECT,
-													18000,
+													24000,
 													0,
 													false,
 													false,
 													true
 											),
-											new MobEffectInstance(MobEffects.GLOWING, 18000, 0)
+											new MobEffectInstance(MobEffects.GLOWING, 24000, 0)
 									))).build());
 				}
 			});
-			context.modify(Items.GOLDEN_APPLE, builder -> {
-				builder.set(DataComponents.FOOD, null);
-				builder.set(DataComponents.USE_COOLDOWN, new UseCooldown(0.5F));
-				builder.set(DataComponents.CONSUMABLE, Consumable.builder()
-						.consumeSeconds(1.6F)
-						.animation(ItemUseAnimation.EAT)
-						.sound(SoundEvents.GENERIC_EAT)
-						.hasConsumeParticles(true)
-						.onConsume(
-								new ApplyStatusEffectsConsumeEffect(List.of(
-										new MobEffectInstance(
-												FoodOverhaulVanillaFoods.GOLDEN_APPLE_FOOD_EFFECT,
-												30000,
-												0,
-												false,
-												false,
-												true
-										),
-										new MobEffectInstance(MobEffects.REGENERATION, 100, 1),
-										new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0)
-								))).build());
-			});
+			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
+					FoodOverhaulVanillaFoods.GOLDEN_APPLE_FOOD_EFFECT,
+					72000,
+					0,
+					false,
+					false,
+					true
+			), Items.GOLDEN_APPLE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.GOLDEN_CARROT_FOOD_EFFECT,
-					30000,
+					72000,
 					0,
 					false,
 					false,
@@ -364,7 +334,7 @@ public class ModifyDataComponentHelper {
 									new ApplyStatusEffectsConsumeEffect(
 											new MobEffectInstance(
 													FoodOverhaulVanillaFoods.MILK_FOOD_EFFECT,
-													12000,
+													6000,
 													0,
 													false,
 													false,
@@ -392,7 +362,7 @@ public class ModifyDataComponentHelper {
 			}
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.MUSHROOM_STEW_FOOD_EFFECT,
-					30000,
+					36000,
 					0,
 					false,
 					false,
@@ -418,7 +388,7 @@ public class ModifyDataComponentHelper {
 								new ApplyStatusEffectsConsumeEffect(List.of(
 										new MobEffectInstance(
 												FoodOverhaulVanillaFoods.NETHER_WART_FOOD_EFFECT,
-												18000,
+												12000,
 												0,
 												false,
 												false,
@@ -488,7 +458,7 @@ public class ModifyDataComponentHelper {
 									new ApplyStatusEffectsConsumeEffect(
 											new MobEffectInstance(
 													FoodOverhaulVanillaFoods.PUMPKIN_PIE_FOOD_EFFECT,
-													30000,
+													36000,
 													0,
 													false,
 													false,
@@ -508,7 +478,7 @@ public class ModifyDataComponentHelper {
 			), Items.RABBIT);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.RABBIT_STEW_FOOD_EFFECT,
-					30000,
+					36000,
 					0,
 					false,
 					false,
@@ -516,7 +486,7 @@ public class ModifyDataComponentHelper {
 			), Items.RABBIT_STEW);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.RED_MUSHROOM_FOOD_EFFECT,
-					18000,
+					12000,
 					0,
 					false,
 					false,
@@ -548,7 +518,7 @@ public class ModifyDataComponentHelper {
 			), Items.SPIDER_EYE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.SUGAR_FOOD_EFFECT,
-					12000,
+					6000,
 					0,
 					false,
 					false,
@@ -569,7 +539,7 @@ public class ModifyDataComponentHelper {
 									new ApplyStatusEffectsConsumeEffect(List.of(
 											new MobEffectInstance(
 													FoodOverhaulVanillaFoods.SWEET_BERRIES_FOOD_EFFECT,
-													18000,
+													24000,
 													0,
 													false,
 													false,
@@ -588,7 +558,7 @@ public class ModifyDataComponentHelper {
 			), Items.TROPICAL_FISH);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods.WARPED_FUNGUS_FOOD_EFFECT,
-					6000,
+					24000,
 					0,
 					false,
 					false,

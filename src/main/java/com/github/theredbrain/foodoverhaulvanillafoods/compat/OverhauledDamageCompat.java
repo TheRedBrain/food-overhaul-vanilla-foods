@@ -7,8 +7,11 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
 public class OverhauledDamageCompat {
 	public static void addAttributes() {
-		StatusEffectsRegistry.BEETROOT_SOUP_FOOD_EFFECT
-				.addAttributeModifier(OverhauledDamage.FROST_RESISTANCE, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		StatusEffectsRegistry.BEETROOT_SOUP_FOOD_EFFECT
+//				.addAttributeModifier(OverhauledDamage.FROST_RESISTANCE, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
+//		;
+		StatusEffectsRegistry.BEEF_FOOD_EFFECT
+				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), -2.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		StatusEffectsRegistry.CHICKEN_FOOD_EFFECT
 				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), -2.0F, AttributeModifier.Operation.ADD_VALUE)
