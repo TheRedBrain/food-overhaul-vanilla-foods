@@ -15,7 +15,7 @@ public class ServerConfig extends Config {
 
 	public ValidatedBoolean modify_vanilla_items = new ValidatedBoolean(true);
 	public ValidatedBoolean is_pumpkin_pie_consumable = new ValidatedBoolean(true);
-	public ValidatedEnum<FoodOverhaulVanillaFoods.MilkFunctionality> milk_bucket_functionality = new ValidatedEnum<>(FoodOverhaulVanillaFoods.MilkFunctionality.VANILLA);
+	public ValidatedEnum<FoodOverhaulVanillaFoods.MilkFunctionality> milk_bucket_functionality = new ValidatedEnum<>(FoodOverhaulVanillaFoods.MilkFunctionality.FOOD);
 	public ValidatedBoolean enable_finite_plants_integration = new ValidatedBoolean(false);
 
 	public ValidatedBoolean enable_health_regeneration_overhaul_compatibility = new ValidatedBoolean(true);
