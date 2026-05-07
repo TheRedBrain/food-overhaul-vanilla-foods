@@ -18,6 +18,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 
@@ -30,7 +31,7 @@ public class BlockRegistry {
 	public static FoodBlockEntity.FoodBlockData OVERHAULED_CAKE_FOOD_BLOCK_DATA = new FoodBlockEntity.FoodBlockData(
 			List.of(
 					new MobEffectInstance(
-							FoodOverhaulVanillaFoods.CAKE_FOOD_EFFECT,
+							FoodOverhaulVanillaFoods_StatusEffects.CAKE_FOOD_EFFECT,
 							12000,
 							0,
 							false,
@@ -45,17 +46,17 @@ public class BlockRegistry {
 			0,
 			false
 	);
-	public static Block OVERHAULED_CAKE_BLOCK = registerBlockWithFoodBlockData(OVERHAULED_CAKE_FOOD_BLOCK_DATA, OVERHAULED_CAKE_BLOCK_KEY, OVERHAULED_CAKE_ITEM_KEY, new OverhauledCakeBlock(BlockBehaviour.Properties.of().setId(OVERHAULED_CAKE_BLOCK_KEY).forceSolidOn().strength(0.5F).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)), List.of(FoodOverhaul.CREATIVE_MODE_TAB_KEY));
+	public static Block OVERHAULED_CAKE_BLOCK = registerBlockWithFoodBlockDataAndBlockEntity(OVERHAULED_CAKE_FOOD_BLOCK_DATA, OVERHAULED_CAKE_BLOCK_KEY, OVERHAULED_CAKE_ITEM_KEY, EntityRegistry.FOOD_BLOCK_ENTITY, new OverhauledCakeBlock(BlockBehaviour.Properties.of().setId(OVERHAULED_CAKE_BLOCK_KEY).forceSolidOn().strength(0.5F).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)), List.of(FoodOverhaul.CREATIVE_MODE_TAB_KEY));
 
-	private static Block registerBlockWithFoodBlockData(FoodBlockEntity.FoodBlockData foodBlockData, ResourceKey<Block> block_key, ResourceKey<Item> item_key, Block block, List<ResourceKey<CreativeModeTab>> itemGroupList) {
+	private static Block registerBlockWithFoodBlockDataAndBlockEntity(FoodBlockEntity.FoodBlockData foodBlockData, ResourceKey<Block> block_key, ResourceKey<Item> item_key, BlockEntityType<?> blockEntityType, Block block, List<ResourceKey<CreativeModeTab>> itemGroupList) {
 		Registry.register(BuiltInRegistries.ITEM, item_key, new BlockItem(block, new Item.Properties().setId(item_key).component(FoodOverhaulDataComponents.FOOD_BLOCK_DATA, new FoodBlockDataComponent(foodBlockData)).stacksTo(1)));
 		for (ResourceKey<CreativeModeTab> itemGroup : itemGroupList) {
 			CreativeModeTabEvents.modifyOutputEvent(itemGroup).register(content -> content.accept(block));
 		}
+		blockEntityType.addValidBlock(block);
 		return Registry.register(BuiltInRegistries.BLOCK, block_key, block);
 	}
 
-	public static void init() {
-		EntityRegistry.FOOD_BLOCK_ENTITY.addValidBlock(BlockRegistry.OVERHAULED_CAKE_BLOCK);
+	public static void bootstrap() {
 	}
 }
