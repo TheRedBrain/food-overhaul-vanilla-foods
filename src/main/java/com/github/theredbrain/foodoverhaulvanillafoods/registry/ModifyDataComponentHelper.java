@@ -57,7 +57,7 @@ public class ModifyDataComponentHelper {
 			), Items.BEETROOT);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods_StatusEffects.BEETROOT_SOUP_FOOD_EFFECT,
-					36000,
+					48000,
 					0,
 					false,
 					false,
@@ -217,7 +217,7 @@ public class ModifyDataComponentHelper {
 			), Items.COOKED_SALMON);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods_StatusEffects.COOKIE_FOOD_EFFECT,
-					12000,
+					6000,
 					0,
 					false,
 					false,
@@ -362,7 +362,7 @@ public class ModifyDataComponentHelper {
 			}
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods_StatusEffects.MUSHROOM_STEW_FOOD_EFFECT,
-					36000,
+					48000,
 					0,
 					false,
 					false,
@@ -478,7 +478,7 @@ public class ModifyDataComponentHelper {
 			), Items.RABBIT);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoods_StatusEffects.RABBIT_STEW_FOOD_EFFECT,
-					36000,
+					48000,
 					0,
 					false,
 					false,
