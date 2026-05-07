@@ -1,3 +1,14 @@
+# 2.2.0
+
+## Changes
+
+- reduced cookie food effect duration
+- increased food effect duration for soups and stews
+
+## Fixes
+
+- fixed block and mob effect registration
+
 # 2.1.0
 
 - now works with Food Overhaul 3.1.0
