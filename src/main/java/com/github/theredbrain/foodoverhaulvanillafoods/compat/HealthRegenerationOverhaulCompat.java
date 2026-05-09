@@ -1,7 +1,7 @@
 package com.github.theredbrain.foodoverhaulvanillafoods.compat;
 
 import com.github.theredbrain.foodoverhaulvanillafoods.FoodOverhaulVanillaFoods;
-import com.github.theredbrain.foodoverhaulvanillafoods.registry.FoodOverhaulVanillaFoods_StatusEffects;
+import com.github.theredbrain.foodoverhaulvanillafoods.registry.FoodOverhaulVanillaFoodsStatusEffects;
 import com.github.theredbrain.healthregenerationoverhaul.HealthRegenerationOverhaul;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
@@ -28,7 +28,7 @@ public class HealthRegenerationOverhaulCompat {
 //		StatusEffectsRegistry.BROWN_MUSHROOM_FOOD_EFFECT
 //				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.brown_mushroom_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 //		;
-		FoodOverhaulVanillaFoods_StatusEffects.CAKE_FOOD_EFFECT_INSTANCE
+		FoodOverhaulVanillaFoodsStatusEffects.CAKE_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cake_food_effect"), 3.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 //		StatusEffectsRegistry.CARROT_FOOD_EFFECT
@@ -52,7 +52,7 @@ public class HealthRegenerationOverhaulCompat {
 //		StatusEffectsRegistry.COOKED_CHICKEN_FOOD_EFFECT
 //				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_chicken_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 //		;
-		FoodOverhaulVanillaFoods_StatusEffects.COOKED_COD_FOOD_EFFECT_INSTANCE
+		FoodOverhaulVanillaFoodsStatusEffects.COOKED_COD_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_cod_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 //		StatusEffectsRegistry.COOKED_MUTTON_FOOD_EFFECT
@@ -64,7 +64,7 @@ public class HealthRegenerationOverhaulCompat {
 //		StatusEffectsRegistry.COOKED_RABBIT_FOOD_EFFECT
 //				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_rabbit_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 //		;
-		FoodOverhaulVanillaFoods_StatusEffects.COOKED_SALMON_FOOD_EFFECT_INSTANCE
+		FoodOverhaulVanillaFoodsStatusEffects.COOKED_SALMON_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.cooked_salmon_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 //		StatusEffectsRegistry.COOKIE_FOOD_EFFECT
@@ -91,10 +91,10 @@ public class HealthRegenerationOverhaulCompat {
 //		StatusEffectsRegistry.MELON_SLICE_FOOD_EFFECT
 //				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.melon_slice_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 //		;
-		FoodOverhaulVanillaFoods_StatusEffects.MILK_FOOD_EFFECT_INSTANCE
+		FoodOverhaulVanillaFoodsStatusEffects.MILK_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.milk_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
-		FoodOverhaulVanillaFoods_StatusEffects.MUSHROOM_STEW_FOOD_EFFECT_INSTANCE
+		FoodOverhaulVanillaFoodsStatusEffects.MUSHROOM_STEW_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.mushroom_stew_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 //		StatusEffectsRegistry.MUTTON_FOOD_EFFECT
@@ -106,7 +106,7 @@ public class HealthRegenerationOverhaulCompat {
 //		StatusEffectsRegistry.POTATO_FOOD_EFFECT
 //				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.potato_food_effect"), 3.0F, AttributeModifier.Operation.ADD_VALUE)
 //		;
-		FoodOverhaulVanillaFoods_StatusEffects.PUMPKIN_PIE_FOOD_EFFECT_INSTANCE
+		FoodOverhaulVanillaFoodsStatusEffects.PUMPKIN_PIE_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(HealthRegenerationOverhaul.HEALTH_REGENERATION, FoodOverhaulVanillaFoods.identifier("effect.pumpkin_pie_food_effect"), 1.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 //		StatusEffectsRegistry.RABBIT_FOOD_EFFECT

@@ -11,7 +11,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 
-public class FoodOverhaulVanillaFoods_StatusEffects {
+public class FoodOverhaulVanillaFoodsStatusEffects {
 
 	public static Holder<MobEffect> APPLE_FOOD_EFFECT;
 	public static Holder<MobEffect> BAKED_POTATO_FOOD_EFFECT;

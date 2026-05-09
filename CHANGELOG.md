@@ -1,5 +1,13 @@
 # 2.2.0
 
+- now works with Food Overhaul 3.2.0
+
+## Technical
+
+- improved mod stability by changing how things like configs, blocks, etc are registered
+
+# 2.2.0
+
 ## Changes
 
 - reduced cookie food effect duration
