@@ -44,7 +44,9 @@ public class FoodOverhaulVanillaFoodsBlocks {
 			"",
 			"",
 			0,
-			false
+			true,
+			true,
+			true
 	);
 	public static Block OVERHAULED_CAKE_BLOCK = registerBlockWithFoodBlockDataAndBlockEntity(OVERHAULED_CAKE_FOOD_BLOCK_DATA, OVERHAULED_CAKE_BLOCK_KEY, OVERHAULED_CAKE_ITEM_KEY, FoodOverhaulEntities.FOOD_BLOCK_ENTITY, new OverhauledCakeBlock(BlockBehaviour.Properties.of().setId(OVERHAULED_CAKE_BLOCK_KEY).forceSolidOn().strength(0.5F).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)), List.of(FoodOverhaul.CREATIVE_MODE_TAB_KEY));
 
