@@ -19,7 +19,9 @@ import java.util.List;
 
 public class ModifyDataComponentHelper {
 
-	public static void init(ServerConfig serverConfig) {
+	public static void init() {
+
+		ServerConfig serverConfig = FoodOverhaulVanillaFoodsConfigs.SERVER_CONFIG;
 
 		DefaultItemComponentEvents.MODIFY.register(context -> {
 

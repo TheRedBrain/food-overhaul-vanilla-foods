@@ -4,11 +4,10 @@ import com.github.theredbrain.foodoverhaulvanillafoods.compat.HealthRegeneration
 import com.github.theredbrain.foodoverhaulvanillafoods.compat.ManaAttributesCompat;
 import com.github.theredbrain.foodoverhaulvanillafoods.compat.OverhauledDamageCompat;
 import com.github.theredbrain.foodoverhaulvanillafoods.compat.StaminaAttributesCompat;
-import com.github.theredbrain.foodoverhaulvanillafoods.config.ServerConfig;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.FoodOverhaulVanillaFoodsBlocks;
+import com.github.theredbrain.foodoverhaulvanillafoods.registry.FoodOverhaulVanillaFoodsConfigs;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.FoodOverhaulVanillaFoodsStatusEffects;
 import com.github.theredbrain.foodoverhaulvanillafoods.registry.ModifyDataComponentHelper;
-import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
 import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
@@ -27,7 +26,6 @@ import java.util.Optional;
 public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static final String MOD_ID = "foodoverhaulvanillafoods";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static ServerConfig SERVER_CONFIG;
 
 	public static TagKey<MobEffect> REMOVED_BY_MILK = TagKey.create(Registries.MOB_EFFECT, identifier("removed_by_milk"));
 
@@ -37,16 +35,16 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	public static final boolean isStaminaAttributesLoaded = FabricLoader.getInstance().isModLoaded("staminaattributes");
 
 	public static void addModdedAttributesToFoodEffects() {
-		if (isHealthRegenerationOverhaulLoaded && SERVER_CONFIG.enable_health_regeneration_overhaul_compatibility.get()) {
+		if (isHealthRegenerationOverhaulLoaded && FoodOverhaulVanillaFoodsConfigs.SERVER_CONFIG.enable_health_regeneration_overhaul_compatibility.get()) {
 			HealthRegenerationOverhaulCompat.addAttributes();
 		}
-		if (isManaAttributesLoaded && SERVER_CONFIG.enable_mana_attributes_compatibility.get()) {
+		if (isManaAttributesLoaded && FoodOverhaulVanillaFoodsConfigs.SERVER_CONFIG.enable_mana_attributes_compatibility.get()) {
 			ManaAttributesCompat.addAttributes();
 		}
-		if (isOverhauledDamageLoaded && SERVER_CONFIG.enable_overhauled_damage_compatibility.get()) {
+		if (isOverhauledDamageLoaded && FoodOverhaulVanillaFoodsConfigs.SERVER_CONFIG.enable_overhauled_damage_compatibility.get()) {
 			OverhauledDamageCompat.addAttributes();
 		}
-		if (isStaminaAttributesLoaded && SERVER_CONFIG.enable_stamina_attributes_compatibility.get()) {
+		if (isStaminaAttributesLoaded && FoodOverhaulVanillaFoodsConfigs.SERVER_CONFIG.enable_stamina_attributes_compatibility.get()) {
 			StaminaAttributesCompat.addAttributes();
 		}
 	}
@@ -54,13 +52,13 @@ public class FoodOverhaulVanillaFoods implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Even more overhauled food!");
-		SERVER_CONFIG = ConfigApiJava.registerAndLoadConfig(ServerConfig::new);
 
 		FoodOverhaulVanillaFoodsBlocks.bootstrap();
+		FoodOverhaulVanillaFoodsConfigs.bootstrap();
 		FoodOverhaulVanillaFoodsStatusEffects.bootstrap();
 
-		if (SERVER_CONFIG.modify_vanilla_items.get()) {
-			ModifyDataComponentHelper.init(SERVER_CONFIG);
+		if (FoodOverhaulVanillaFoodsConfigs.SERVER_CONFIG.modify_vanilla_items.get()) {
+			ModifyDataComponentHelper.init();
 		}
 
 		Optional<ModContainer> optionalModContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
