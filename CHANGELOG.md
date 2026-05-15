@@ -1,6 +1,12 @@
-# 2.2.0
+# 2.3.0
 
 - now works with Food Overhaul 3.2.0
+
+## Changes
+
+- reduced baked potato food effect duration
+- raw cod and raw salmon now provide 1 health regeneration instead of poison build up
+- bread now additionally provides 1 health regeneration
 
 ## Technical
 

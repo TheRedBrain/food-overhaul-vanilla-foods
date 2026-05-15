@@ -7,17 +7,11 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
 public class OverhauledDamageCompat {
 	public static void addAttributes() {
-//		StatusEffectsRegistry.BEETROOT_SOUP_FOOD_EFFECT
-//				.addAttributeModifier(OverhauledDamage.FROST_RESISTANCE, FoodOverhaulVanillaFoods.identifier("effect.beetroot_soup_food_effect"), 5.0F, AttributeModifier.Operation.ADD_VALUE)
-//		;
 		FoodOverhaulVanillaFoodsStatusEffects.BEEF_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.beef_food_effect"), -2.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		FoodOverhaulVanillaFoodsStatusEffects.CHICKEN_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.chicken_food_effect"), -2.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		FoodOverhaulVanillaFoodsStatusEffects.COD_FOOD_EFFECT_INSTANCE
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.cod_food_effect"), -2.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		FoodOverhaulVanillaFoodsStatusEffects.HONEY_BOTTLE_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(OverhauledDamage.MAX_POISON_BUILD_UP, FoodOverhaulVanillaFoods.identifier("effect.honey_bottle_food_effect"), 10.0F, AttributeModifier.Operation.ADD_VALUE)
@@ -34,9 +28,6 @@ public class OverhauledDamageCompat {
 		;
 		FoodOverhaulVanillaFoodsStatusEffects.RED_MUSHROOM_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.red_mushroom_food_effect"), -4.0F, AttributeModifier.Operation.ADD_VALUE)
-		;
-		FoodOverhaulVanillaFoodsStatusEffects.SALMON_FOOD_EFFECT_INSTANCE
-				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.salmon_food_effect"), -2.0F, AttributeModifier.Operation.ADD_VALUE)
 		;
 		FoodOverhaulVanillaFoodsStatusEffects.SPIDER_EYE_FOOD_EFFECT_INSTANCE
 				.addAttributeModifier(OverhauledDamage.POISON_BUILD_UP_REDUCTION, FoodOverhaulVanillaFoods.identifier("effect.spider_eye_food_effect"), -3.0F, AttributeModifier.Operation.ADD_VALUE)

@@ -35,7 +35,7 @@ public class ModifyDataComponentHelper {
 			), Items.APPLE);
 			applyDefaultOverhauledFoodComponents(context, new MobEffectInstance(
 					FoodOverhaulVanillaFoodsStatusEffects.BAKED_POTATO_FOOD_EFFECT,
-					36000,
+					24000,
 					0,
 					false,
 					false,
